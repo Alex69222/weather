@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Weather</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png"/>
+</head>
+
+<body>
+    <header>
+        <div class="location">
+            <div class="header-container">
+                <div class="current-city">
+                    <p class="city">Омск</p>
+                    
+                </div>
+                <form class="cities-select-form">
+                    <select name="city-select" class="cities-select">
+                    </select><button type="button" class="city-submit">ок</button>
+                </form>
+                <div class="measure-units">
+                    <span>&#176;</span>
+                    <button type="button" class="celsius units active">C</button><button type="button" class="fahrenheit units">F</button>
+                </div>
+            </div>
+            <div class="location-controls">
+                <button type="button" class="changeCity">Сменить город</button>
+                <button type="button" class="myLocation">Мое местоположение</button>
+            </div>
+            
+        </div>
+        
+    </header>
+    <main>
+        <div class="weather">
+            <img class="weather-img" src="./assets/img/sun.png" alt="sun">
+            <span class="temperature">19&#176;</span>
+        </div>
+        <p class="weather-description">Преимущественно солнечно</p>
+    </main>
+    <footer>
+        <div class="characteristics">
+            <div class="wind characteristic">
+                <p class="name">Ветер</p>
+                <p class="info">5 м/c, западный</p>
+            </div>     
+            <div class="pressure characteristic">
+                <p class="name">Давление</p>
+                <p class="info">752 мм рт. ст.</p>
+            </div>     
+            <div class="humidity characteristic">
+                <p class="name">Влажность</p>
+                <p class="info">60%</p>
+            </div>     
+            <div class="rain-probabiliry characteristic">
+                <p class="name">Вероятность дождя</p>
+                <p class="info">10%</p>
+            </div>     
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
