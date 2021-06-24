@@ -70,7 +70,7 @@
                                 windDirection = 'непредсказуемый'
                                 break;
                         }
-                        wind.innerHTML = `${Math.round(data.wind.speed)} ${windSpeedUnits}, ${windDirection}`
+                        wind.innerHTML = `${data.wind.speed} ${windSpeedUnits}, ${windDirection}`
                     })
                 }
             )
